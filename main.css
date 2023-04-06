@@ -7,11 +7,54 @@
 
 .heading {
   text-align: center;
-  color: darkblue;
-  font-size: 4vw;
+  color: rgb(248, 255, 180);
+  font-size: 3vw;
+  padding: 5px;
 }
-.container {
+
+.main {
   width: 100%;
-  min-height: 100vh;
-  background-image: url(paper.png);
+  height: 100vh;
+  background-image: url(paper2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(171, 192, 206);
+  border-radius: 5px;
+  width: 500px;
+  height: 700px;
+  padding: 15px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.button {
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(171, 192, 206);
+  border: none;
+  padding: 10px;
+}
+
+#addButton {
+  margin-left: 10px;
+}
+.button:hover {
+  border: none;
+  background-color: aliceblue;
+}
+
+.input {
+  width: 800px;
+  border-radius: 20px;
+  border-style: double;
+  border-color: rgb(171, 192, 206);
 }

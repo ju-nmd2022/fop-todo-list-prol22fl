@@ -14,15 +14,31 @@
     <title>To-do list</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="heading">To-do list</h1>
-      <div class="input-container">
-        <input type="text" id="inputField" />
-        <button id="addButton"><img src="add.png" alt="" /></button>
+    <main class="main">
+      <div class="container">
+        <h1 class="heading">To-do list</h1>
+        <div class="input-container">
+          <input type="text" id="inputField" class="input" />
+          <button class="button" id="addButton" type="button">
+            <img src="add.png" alt="" />
+          </button>
+        </div>
+        <!--input container end-->
+        <div class="tasks-container">
+          <div class="task-item-container">
+            <p id="taskText">hello</p>
+            <button class="button" id="checkedButton" type="button">
+              <img src="checked.png" />
+            </button>
+            <button id="removeButton" class="button">
+              <img src="remove.png" />
+            </button>
+          </div>
+        </div>
+
+        <!--container end-->
       </div>
-      <!--input container end-->
-      <div class="tasks-container"></div>
-    </div>
-    <script src="script.js"></script>
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
