@@ -6,39 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
+    <script
+      src="https://kit.fontawesome.com/5adb91e260.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
     <title>To-do list</title>
   </head>
   <body>
-    <main class="main">
-      <div class="container">
-        <h1 class="heading">To-do list</h1>
-        <div class="input-container">
-          <input type="text" id="inputField" class="input" />
-          <button class="button" id="addButton" type="button">
-            <img src="add.png" alt="" />
-          </button>
+    <div class="todo">
+      <div class="to-do-content">
+        <h1 class="to-do-title">To-do list</h1>
+        <div class="to-do-new">
+          <input type="text" placeholder="Type here.." />
+          <div class="to-do-add">+</div>
         </div>
-        <!--input container end-->
-        <div class="tasks-container">
-          <div class="task-item-container">
-            <p id="taskText">hello</p>
-            <button class="button" id="checkedButton" type="button">
-              <img src="checked.png" />
-            </button>
-            <button id="removeButton" class="button">
-              <img src="remove.png" />
-            </button>
+        <div class="to-do-list">
+          <div class="to-do-task">
+            <label class="to-do-checkbox"
+              ><input type="checkbox" />
+              <div></div
+            ></label>
+            <div class="to-do-task-text">text here</div>
+            <div class="to-do-task-del">-</div>
           </div>
         </div>
-
-        <!--container end-->
       </div>
-      <script src="script.js"></script>
-    </main>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
