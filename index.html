@@ -18,10 +18,18 @@
       <div class="to-do-content">
         <h1 class="to-do-title">To-do list</h1>
         <div class="to-do-new">
-          <input type="text" placeholder="Type here.." />
-          <div class="to-do-add">+</div>
+          <input id="new" type="text" placeholder="Type here.." />
+          <div id="add" class="to-do-add">+</div>
         </div>
-        <div class="to-do-list">
+        <div id="tasks" class="to-do-list">
+          <div class="to-do-task to-do-task-complete">
+            <label class="to-do-checkbox"
+              ><input type="checkbox" />
+              <div></div
+            ></label>
+            <div class="to-do-task-text">text here</div>
+            <div class="to-do-task-del">-</div>
+          </div>
           <div class="to-do-task">
             <label class="to-do-checkbox"
               ><input type="checkbox" />

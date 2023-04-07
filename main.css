@@ -17,7 +17,7 @@ body {
 .todo {
   padding: 32px;
   background-color: aliceblue;
-  width: 30vw;
+  width: 90vw;
   border-radius: 20px;
 }
 
@@ -74,11 +74,31 @@ body {
   display: none;
 }
 
+.to-do-checkbox input:checked + div {
+  background-color: aquamarine;
+}
+.to-do-checkbox input:checked + div::after {
+  display: block;
+}
 .to-do-checkbox div {
   --size: 28px;
+  cursor: pointer;
   height: var(--size);
   width: var(--size);
   border: 1px solid black;
+  border-radius: 4px;
+  position: relative;
+  color: aliceblue;
+}
+.to-do-checkbox div::after {
+  content: "✓";
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .to-do-task-text {
   font-size: 20px;
@@ -98,4 +118,8 @@ body {
   color: aliceblue;
   cursor: pointer;
   font-size: 44px;
+}
+
+.to-do-task-complete .to-do-task-text {
+  text-decoration: line-through;
 }
