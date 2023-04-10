@@ -1,125 +1,64 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Schibsted Grotesk", sans-serif;
 }
+.heading {
+  text-align: center;
+  color: rgb(248, 255, 180);
+  font-size: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
 
-body {
-  background-image: url(back.jpg);
-  height: 90vh;
+.main {
+  background-color: rgb(120, 116, 133);
   display: flex;
   justify-content: center;
-  padding: 32px;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.todo {
-  padding: 32px;
-  background-color: aliceblue;
-  width: 90vw;
-  border-radius: 20px;
-}
-
-.to-do-content {
-}
-
-.to-do-title {
-}
-
-.to-do-new {
-  display: flex;
-  margin: 16px 0 32px;
-}
-
-.to-do-new input {
-  margin-right: 16px;
-  font-size: 18px;
-  padding: 8px 16px;
-  height: var(--size);
-  border: 1px solid rgb(170, 163, 163);
-  border-radius: 5px;
-  flex-grow: 1;
-}
-.to-do-add {
-  text-align: center;
-  line-height: 50px;
-  font-size: 32px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: rgb(53, 116, 95);
-  color: aliceblue;
-  cursor: pointer;
-}
-
-.to-do-list {
-}
-
-.to-do-task {
-  display: flex;
   align-items: center;
-  height: 36px;
-  --size: 36px;
+  height: 900px;
 }
 
-.to-do-task:hover .to-do-task-del {
-  display: block;
-}
-.to-do-checkbox {
-  margin-right: 16px;
-}
-
-.to-do-checkbox input {
-  display: none;
+.container {
+  background-color: rgb(158, 198, 227);
+  border-radius: 5px;
+  width: 600px;
+  height: 800px;
+  margin-top: 50px;
 }
 
-.to-do-checkbox input:checked + div {
-  background-color: aquamarine;
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 1px;
 }
-.to-do-checkbox input:checked + div::after {
-  display: block;
-}
-.to-do-checkbox div {
-  --size: 28px;
+
+.button {
+  outline: none;
   cursor: pointer;
-  height: var(--size);
-  width: var(--size);
-  border: 1px solid black;
-  border-radius: 4px;
-  position: relative;
-  color: aliceblue;
-}
-.to-do-checkbox div::after {
-  content: "✓";
-  text-align: center;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.to-do-task-text {
-  font-size: 20px;
+  background-color: rgb(158, 198, 227);
+  border: none;
+  padding: 10px;
+  margin-left: 30px;
 }
 
-.to-do-task-del {
-  display: none;
-  margin-left: auto;
-  margin-right: 0;
-  text-align: center;
-  line-height: 36px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50px;
-  line-height: calc(var(--size) * 0.88);
-  background-color: rgb(53, 116, 95);
-  color: aliceblue;
-  cursor: pointer;
-  font-size: 44px;
+.input {
+  width: 800px;
+  border-radius: 20px;
+  border-style: double;
+  border-color: rgb(171, 192, 206);
+  margin-left: 25px;
+  font-size: 22px;
 }
 
-.to-do-task-complete .to-do-task-text {
-  text-decoration: line-through;
+.todo-item-container {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#add-button {
+  margin-right: 30px;
 }

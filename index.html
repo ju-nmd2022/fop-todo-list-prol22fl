@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/5adb91e260.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="main.css" />
     <title>To-do list</title>
   </head>
   <body>
-    <div class="todo">
-      <div class="to-do-content">
-        <h1 class="to-do-title">To-do list</h1>
-        <div class="to-do-new">
-          <input id="new" type="text" placeholder="Type here.." />
-          <div id="add" class="to-do-add">+</div>
+    <main class="main">
+      <div class="container">
+        <h1 class="heading">To-do list</h1>
+        <div class="input-group">
+          <input
+            type="text"
+            id="text-input-field"
+            class="input"
+            placeholder="Type.."
+          />
+          <button class="button" id="add-button" type="button">
+            <img src="newa.png" alt="" />
+          </button>
         </div>
-        <div id="tasks" class="to-do-list">
-          <div class="to-do-task to-do-task-complete">
-            <label class="to-do-checkbox"
-              ><input type="checkbox" />
-              <div></div
-            ></label>
-            <div class="to-do-task-text">text here</div>
-            <div class="to-do-task-del">-</div>
-          </div>
-          <div class="to-do-task">
-            <label class="to-do-checkbox"
-              ><input type="checkbox" />
-              <div></div
-            ></label>
-            <div class="to-do-task-text">text here</div>
-            <div class="to-do-task-del">-</div>
+        <div class="todos-container">
+          <div class="todo-item-container">
+            <p id="todo-Text">hello</p>
+            <button id="checked-button" class="button"></button>
+            <button id="delete-button" class="button">
+              <img src="newr.png" />
+            </button>
           </div>
         </div>
       </div>
-    </div>
-    <script src="script.js"></script>
+
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
