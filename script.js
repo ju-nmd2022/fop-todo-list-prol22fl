@@ -3,9 +3,10 @@ const addButton = document.querySelector("#add-button");
 const todosContainer = document.querySelector(".todos-container");
 const toDoText = document.getElementById("#todo-Text");
 
+// reference from YouTube:https://www.youtube.com/watch?v=Ttf3CEsEwMQ&t=551s
+//local storage done with help of chatGPT
 const todoItems = JSON.parse(localStorage.getItem("todoItems")) || [];
 
-// Function to render the todo items
 function renderTodoItems() {
   todosContainer.innerHTML = "";
 
@@ -14,7 +15,6 @@ function renderTodoItems() {
     const todoItemContainer = document.createElement("div");
     todoItemContainer.classList.add("todo-item-container");
 
-    //making p element
     todosContainer.appendChild(todoItemContainer);
     const todoText = document.createElement("p");
     todoText.id = "todo-text";
@@ -28,9 +28,15 @@ function renderTodoItems() {
     checkedButton.appendChild(checkedImage);
     todoItemContainer.appendChild(checkedButton);
 
+    if (item.completed) {
+      checkedButton.style.backgroundColor = "rgb(255, 245, 214)";
+    }
+
     checkedButton.addEventListener("click", () => {
       const parent = checkedButton.parentElement;
       checkedButton.style.backgroundColor = "rgb(255, 245, 214)";
+      item.completed = true;
+      saveTodoItems();
     });
 
     // creating delete button
